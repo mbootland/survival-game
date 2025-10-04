@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://2iw02qoepmxe"]
+
+[ext_resource type="Script" uid="uid://bpfxeqqcmsjon" path="res://scripts/projectile.gd" id="1_jnjd3"]
+
+[node name="Projectile" type="CSGBox3D"]
+transform = Transform3D(0.08252044, 0, 0, 0, 0.08252044, 0, 0, 0, 0.08252044, 0, 0, 0)
+script = ExtResource("1_jnjd3")

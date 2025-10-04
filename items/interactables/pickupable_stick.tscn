@@ -10,6 +10,7 @@ height = 0.67163086
 [node name="PickupableStick" instance=ExtResource("1_hkur7")]
 
 [node name="Pickupable" parent="." index="0"]
+item_key = 0
 prompt = "Pickup stick"
 
 [node name="CollisionShape3D" parent="Pickupable" index="0"]
