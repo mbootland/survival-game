@@ -18,7 +18,6 @@ func _physics_process(delta: float) -> void:
 	lifetime += delta
 	
 	if lifetime >= MAX_LIFETIME:
-		print("Projectile lifetime expired: ", lifetime)
 		queue_free()
 		return
 	
@@ -27,7 +26,5 @@ func _physics_process(delta: float) -> void:
 		
 		if player:
 			var distance = global_position.distance_to(player.global_position)
-			print("Distance to player: ", distance, " | Projectile pos: ", global_position, " | Player pos: ", player.global_position)
 			if distance < HIT_DISTANCE:
-				print("HIT! Projectile destroyed at distance: ", distance)
 				queue_free()
