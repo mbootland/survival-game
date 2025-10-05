@@ -9,4 +9,4 @@ const BULLETIN_PATHS = {
 }
 
 static func get_bulletin(key : Keys) -> Bulletin:
-	return load(BULLETIN_PATHS.get(key)).instantiate
+	return load(BULLETIN_PATHS.get(key)).instantiate()
