@@ -6,7 +6,7 @@ var inventory : Array = []
 
 func _enter_tree() -> void:
 	EventSystem.INV_try_to_pickup_item.connect(try_to_pickup_item)
-	EventSystem.INV_inventory_updated.connect(send_inventory)
+	EventSystem.INV_ask_update_inventory.connect(send_inventory)
 
 func _ready() -> void:
 	inventory.resize(INVENTORY_SIZE)

@@ -12,5 +12,6 @@ func set_item_key(_item_key) -> void:
 func update_icon() -> void:
 	if item_key == null:
 		icon_texture_rect.texture = null
+		return
 	
 	icon_texture_rect.texture = ItemConfig.get_item_resource(item_key).icon
