@@ -19,5 +19,5 @@ func destroy_bulletin(key : BulletinConfig.Keys) -> void:
 	if not bulletins.has(key):
 		return
 
-	bulletins[key].queue_Free()
+	bulletins[key].queue_free()
 	bulletins.erase(key)
