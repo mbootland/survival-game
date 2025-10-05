@@ -24,3 +24,6 @@ func add_item(item_key : ItemConfig.Keys) -> void:
 	for i in inventory.size():
 		if inventory[i] == null:
 			inventory[i] = item_key
+			break
+
+	print(inventory)

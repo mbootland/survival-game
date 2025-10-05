@@ -55,3 +55,6 @@ func look_around(relative : Vector2) -> void:
 func _unhandled_key_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		
+	elif event.is_action_pressed("open_crafting_menu"):
+		EventSystem.BUL_create.emit(BulletinConfig.Keys.CraftingMenu)
