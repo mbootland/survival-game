@@ -4,5 +4,8 @@
 
 [node name="CraftingMenu" instance=ExtResource("1_ghr5s")]
 
+[node name="InventoryContainer" parent="MarginContainer/HBoxContainer/VSplitContainer/InventoryNinePatchRect" index="0"]
+unique_name_in_owner = false
+
 [node name="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/UtilityNinePatchRect/MarginContainer/VBoxContainer/NinePatchRect" index="0"]
 text = "Crafting"
